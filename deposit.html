@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="../includes/selectable/jquery-select7.css">
     <script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../includes/selectable/jquery-select7.js"></script>
@@ -32,7 +33,7 @@
 </style>
 </head>
 
-<body>
+<body  style="font-family: EB Garamond, serif";>
     
     <nav>
         <article>
@@ -43,9 +44,10 @@
                 </li>
 
                 <li style='transform: translateY(-15px)'>
-                                <a href ='index.html'><button id='nav-trade-btn'>Trade</button></a>
-                                <button class='dropdown-btn' style='overflow:hidden; width: 60px; height: 60px; border: 1px solid transparent; transform: translateY(10px)'><img src='../images/index.html' width='100%' height='100%' style='border-radius: 50%'></button>
-                             </li>            </ul>
+                    <a href ='index.html'><button id='nav-trade-btn'>Trade</button></a>
+                    <button class='dropdown-btn' style='overflow:hidden; width: 60px; height: 60px; border: 1px solid transparent; transform: translateY(10px)'><img src='../images/index.html' width='100%' height='100%' style='border-radius: 50%'></button>
+                </li>            
+            </ul>
         </article>
 
         <article>
@@ -112,9 +114,9 @@
 
 <br>
     
-    <a href="index.html"><li class=""><i class="material-icons">dashboard</i> Dashboard</li></a>
+    <a href="index copy.html"><li class=""><i class="material-icons">dashboard</i> Dashboard</li></a>
     <span style="font-size: 10px; font-weight: bold; padding: 0 10px; color: #6494AE;">APPS</span>
-    <a href="market.html"><li class=""><i class="material-icons">insert_chart</i> Market</li></a>
+    <!-- <a href="market.html"><li class=""><i class="material-icons">insert_chart</i> Market</li></a> -->
     <a href="deposit.html"><li class="active"><i class="material-icons"> credit_card</i> Deposit</li></a>
     <a href="fund_transfer.html"><li class=""><i class="material-icons"> credit_card</i> Fund Transfer</li></a>
     <a href="withdrawal.html"><li class=""><i class="material-icons">account_balance_wallet</i> Withdrawal </li></a>
@@ -241,37 +243,37 @@
 
         <label for="" style='color: var(--text-color);'>Time <i class="fa fa-clock-o"></i></label><br><br>
         <select name="" id='time_select' onchange='time_value(this)'>
-                            <option value="0">1min</option>
-                            <option value="1">2min</option>
-                            <option value="2">3min</option>
-                            <option value="3">4min</option>
-                            <option value="4">5min</option>
-                            <option value="5">6min</option>
-                            <option value="6">7min</option>
-                            <option value="7">8min</option>
-                            <option value="8">9min</option>
-                            <option value="9">10min</option>
-                            <option value="10">11min</option>
-                            <option value="11">12min</option>
-                            <option value="12">13min</option>
-                            <option value="13">14min</option>
-                            <option value="14">15min</option>
-                            <option value="15">16min</option>
-                            <option value="16">17min</option>
-                            <option value="17">18min</option>
-                            <option value="18">19min</option>
-                            <option value="19">20min</option>
-                            <option value="20">21min</option>
-                            <option value="21">22min</option>
-                            <option value="22">23min</option>
-                            <option value="23">24min</option>
-                            <option value="24">25min</option>
-                            <option value="25">26min</option>
-                            <option value="26">27min</option>
-                            <option value="27">28min</option>
-                            <option value="28">29min</option>
-                            <option value="29">30min</option>
-                        </select>
+            <option value="0">1min</option>
+            <option value="1">2min</option>
+            <option value="2">3min</option>
+            <option value="3">4min</option>
+            <option value="4">5min</option>
+            <option value="5">6min</option>
+            <option value="6">7min</option>
+            <option value="7">8min</option>
+            <option value="8">9min</option>
+            <option value="9">10min</option>
+            <option value="10">11min</option>
+            <option value="11">12min</option>
+            <option value="12">13min</option>
+            <option value="13">14min</option>
+            <option value="14">15min</option>
+            <option value="15">16min</option>
+            <option value="16">17min</option>
+            <option value="17">18min</option>
+            <option value="18">19min</option>
+            <option value="19">20min</option>
+            <option value="20">21min</option>
+            <option value="21">22min</option>
+            <option value="22">23min</option>
+            <option value="23">24min</option>
+            <option value="24">25min</option>
+            <option value="25">26min</option>
+            <option value="26">27min</option>
+            <option value="27">28min</option>
+            <option value="28">29min</option>
+            <option value="29">30min</option>
+        </select>
 
         <br><br><br>
         <label for="" style='color: var(--text-color)'>Trade Amount</label><br>
@@ -370,6 +372,7 @@
         border: 1px solid dodgerblue;
         border-radius: 3px;
         margin: 5px 0;
+        cursor: pointer;
     }
     .dol {
         position: absolute; 
@@ -394,6 +397,7 @@
         padding: 10px; z-index: 999;
         border-top: 3px solid dodgerblue;
         border-radius: 5px;
+        cursor: pointer;
     }
     @media screen and (min-width: 768px) {
         #modal {
@@ -437,62 +441,62 @@
 
 
  <div class="container">
-        <h4>DEPOSIT</h4><br><br><br>
-                <form action="#" method="post">
+    <h4>DEPOSIT</h4><br><br><br>
+    <form action="#" method="post">
 
-        <div id="modal">
-                            <h3 style='color: white'>Payment Confirmation</h3><br><hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
-                <p style='font-size: 13px; color: white'>Your Order no. CXCFckh10i0L7 has been placed successfully.</p><br>
-                <p style='font-size: 13px; color: white'>Please send <span id='modal_btc_rate'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount'></span>) to the address below. The balance will appear in your account only after transaction gets confirmed by our team.</p><br>
-                <h4>Payment to the following <span class='modal_type'>BTC</span> Wallet Address</h4><br>
-                <div style='display: grid; grid-template-columns: 1fr 4fr'>
-                
-                    <article>
-                        <img src="../images/qrcode.jpg" id='qrcode' width="100px"  height="100px" style='border-radius: 5px'>
-                    </article>
-
-                    <article style='padding: 5px 10px'><br>
-                        <p style='font-size: 14px'>Send Amount: <span style='color: white'><span id='modal_btc_rate_two'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount_two'>0</span>)</span></p>
-                        <input type="text" readonly  id="myInput" style='padding: 10px 30px' value=''><p  onclick="myFunction()" class='dol' style='background: transparent; color: #1AE0A1'><i class='material-icons'>content_copy	</i></p><br>
-                        <hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
-                        <div style='display: flex'>
-                        <input type="hidden" name='amount' id='post_amount' required>
-                        <input type="hidden" name='eth' id='post_eth' required>
-                            <button type='submit' name='submit'>Confirm</button>
-                            <p id='cancel' style='padding: 10px 7px; text-align: center; background: transparent; color: #d32929; width: 100px; border-radius: 3px; height: 35px; margin: 6px 5px; border:  1px solid #d32929; font-size: 13px'>Cancel</p>
-                        </div>
-                    </article>
-                </div>
-                <p style='font-size: 13px; color: white;'><i class="fa fa-info-circle"></i> Kindly ensure you select the appropriate networks for deposit.</p>
-                        <p style='font-size: 13px; color: #d32929; margin: 5px 0'> <i class="fa fa-info-circle"></i>  Kindly ensure you send exact amount as added in your deposit</p>
-
-            </div>
-
-            <label for="">Select Assets</label>
-            <!-- <input type="text" value='BTC' readonly><br> -->
-            <select name="mode" id='select_input' style='text-align: left;' required>
-                <option value="">Choose Asset</option>
-                <option value="BTC">BTC</option>
-                <option value="ETH">ETH</option>
-                <option value="USDT-TRC20">USDT (TRC20)</option>
-                <option value="USDT-ERC20">USDT (ERC20)</option>
-                <!-- <option value="bank">Bank Transfer</option>
-                <option value="paypal">Paypal</option>
-                <option value="western">Wester Union</option> -->
-            </select>
+        <div id="modal" style="cursor: pointer;">
+            <h3 style='color: white'>Payment Confirmation</h3><br><hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
+            <p style='font-size: 13px; color: white'>Your Order no. CXCFckh10i0L7 has been placed successfully.</p><br>
+            <p style='font-size: 13px; color: white'>Please send <span id='modal_btc_rate'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount'></span>) to the address below. The balance will appear in your account only after transaction gets confirmed by our team.</p><br>
+            <h4>Payment to the following <span class='modal_type'>BTC</span> Wallet Address</h4><br>
+            <div style='display: grid; grid-template-columns: 1fr 4fr'>
             
-            <div id="input-item" style='display: none'>
-                <label for="" id='label_amount'>Amount</label>
-                <input type="text"  id='input_amount' name="deposit_amount"><p class='dol'><i class='material-icons'>&#xe227;</i></p> <br>
+                <article>
+                    <img src="../images/qrcode.jpg" id='qrcode' width="100px"  height="100px" style='border-radius: 5px'>
+                </article>
+
+                <article style='padding: 5px 10px'><br>
+                    <p style='font-size: 14px'>Send Amount: <span style='color: white'><span id='modal_btc_rate_two'>0</span> <span class='modal_type'>BTC</span> ($<span id='modal_amount_two'>0</span>)</span></p>
+                    <input type="text" readonly  id="myInput" style='padding: 10px 30px' value=''><p  onclick="myFunction()" class='dol' style='background: transparent; color: #1AE0A1'><i class='material-icons'>content_copy	</i></p><br>
+                    <hr style='border: 1px solid transparent; border-bottom: 1px solid #1D2D40'><br>
+                    <div style='display: flex'>
+                    <input type="hidden" name='amount' id='post_amount' required>
+                    <input type="hidden" name='eth' id='post_eth' required>
+                        <button type='submit' name='submit'>Confirm</button>
+                        <p id='cancel' style='padding: 10px 7px; text-align: center; background: transparent; color: #d32929; width: 100px; border-radius: 3px; height: 35px; margin: 6px 5px; border:  1px solid #d32929; font-size: 13px'>Cancel</p>
+                    </div>
+                </article>
             </div>
-            <i style='font-size: 13px; color: var(--text); padding: 10px 0'><i class="fa fa-question-circle-o" style='font-size: 5px'></i> Deposit will appear in your account after payment is successfully made and approved by our team.</i><br><br><br><br>
-        </form>
+            <p style='font-size: 13px; color: white;'><i class="fa fa-info-circle"></i> Kindly ensure you select the appropriate networks for deposit.</p>
+                    <p style='font-size: 13px; color: #d32929; margin: 5px 0'> <i class="fa fa-info-circle"></i>  Kindly ensure you send exact amount as added in your deposit</p>
 
-        <p id='modal_btn' style='padding: 10px 7px; font-weight: bold; text-align: center; background: dodgerblue; color: white; width: 130px; border-radius: 3px'>Make Payment</p>
+        </div>
 
-        <p id="error" style='display: none'></p>
-        <p id="currency_rate" style='display: none'></p>
-        <p id="eth_rate" style='display: none'></p>
+        <label for="">Select Assets</label>
+        <!-- <input type="text" value='BTC' readonly><br> -->
+        <select name="mode" id='select_input' style='text-align: left;' required>
+            <option value="">Choose Asset</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT-TRC20">USDT (TRC20)</option>
+            <option value="USDT-ERC20">USDT (ERC20)</option>
+            <!-- <option value="bank">Bank Transfer</option>
+            <option value="paypal">Paypal</option>
+            <option value="western">Wester Union</option> -->
+        </select>
+        
+        <div id="input-item" style='display: none'>
+            <label for="" id='label_amount'>Amount</label>
+            <input type="text"  id='input_amount' name="deposit_amount"><p class='dol'><i class='material-icons'>&#xe227;</i></p> <br>
+        </div>
+        <i style='font-size: 13px; color: var(--text); padding: 10px 0'><i class="fa fa-question-circle-o" style='font-size: 5px'></i> Deposit will appear in your account after payment is successfully made and approved by our team.</i><br><br><br><br>
+    </form>
+
+    <p id='modal_btn' style='padding: 10px 7px; font-weight: bold; text-align: center; background: dodgerblue; color: white; width: 130px; border-radius: 3px'>Make Payment</p>
+
+    <p id="error" style='display: none'></p>
+    <p id="currency_rate" style='display: none'></p>
+    <p id="eth_rate" style='display: none'></p>
  </div>
 
  <script src="../../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
