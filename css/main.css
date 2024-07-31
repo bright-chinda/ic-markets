@@ -133,6 +133,11 @@ button.navbar-toggler {
 .navbar-brand .img{
   width: 100%;
 }
+.navbar-nav{
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
 
 .hero-image .animate1 {
   background-image: url("../images/bg-2.png");
