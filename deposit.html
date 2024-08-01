@@ -52,7 +52,9 @@
 
         <article>
             <ul>
-                <li><img src="../images/image-removebg-preview-2024-05-02T174322.1831720104712.png" width="130px"></li>
+                <li>
+                    <a href="index.html"><img src="images/app-logo.png" width="130px"></a>
+                </li>
                 <li style="display: flex; justify-content: space-between; align-items: center;">
                     <article style="display: flex; padding: 5px;">
                         <img src="../images/dollar-sign.svg" width="40px" style="margin-right: 5px;">
@@ -443,6 +445,7 @@
         <label for="">Select Assets</label>
         <!-- <input type="text" value='BTC' readonly><br> -->
         <!-- <img src="" alt=""> -->
+        <!-- <img src="images/Eth-scan-code.jpg" alt=""> -->
         <select name="mode" id='select_input' style='text-align: left; font-size: 16px;' required>
             <option value="">Choose Asset</option>
             <option value="BTC">BTC</option>
@@ -570,8 +573,10 @@
                     modal_btc_rate_two.textContent = input_amount.value
                     post_eth.value = input_amount.value
                     post_amount.value = Math.round(rate_price)
-                    myInput.value = "0xb305C125638CA8B060F24Ba3379BE27772A3E5C6"
-                    console.log(qrcode.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=0xb305C125638CA8B060F24Ba3379BE27772A3E5C6')
+                    
+                    myInput.value = "0xDeAb0E621dBcCA6F630C9f167aC593954686ACa5"
+                    qrcode.src = 'images/Eth-scan-code.jpg'
+                    // console.log(qrcode.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=0xb305C125638CA8B060F24Ba3379BE27772A3E5C6')
 
                 }else if (select_input.value == "USDT-TRC20") {
                     modal_amount.textContent = input_amount.value
