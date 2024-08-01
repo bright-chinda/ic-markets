@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-necropinvest.com	TRUE	/	FALSE	1999999999	PHPSESSID	b10273c6e1e5bbb6a430a5d327314cfa
-
