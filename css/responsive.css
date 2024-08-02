@@ -104,6 +104,12 @@
     }
 }
 
+@media screen and (max-width:500px) {
+    .navbar-dark .navbar-brand{
+      width: 160px;
+    }
+  }
+
 @media (max-width:480px){
     .converter{
         padding-left: 20px;
