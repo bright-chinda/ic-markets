@@ -38,3 +38,7 @@ dropdownBtn.addEventListener('click', function () {
 //     root.classList.toggle('dark-mode')
 // })
 
+
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );

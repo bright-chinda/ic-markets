@@ -142,6 +142,67 @@ nav article:nth-child(2) {
 
 /* SIDE PANEL LEFT END*/
 
+.all-users-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label{
+    font-size: 15px;
+}
+table{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+th::after,th::before{
+    display: none !important;
+    /* content: ""; */
+}
+div.dataTables_wrapper div.dataTables_filter input :focus{
+    border: none;
+}
+
+table.dataTable>tbody>tr {
+    background-color: #dbf7ff;
+   
+}
+.table>:not(caption)>*>*{
+    border-bottom: 20px solid white;
+}
+table.dataTable.table-striped>tbody>tr.odd>*{
+    box-shadow: none;
+}
+.table-icons{
+    display: flex;
+    gap: 25px;
+}
+.table-write-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #00bcf1;
+    background: none;
+    border: none;
+}
+.table-delete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: red;
+    background: none;
+    border: none;
+}
+div.dataTables_wrapper div.dataTables_info{
+    font-size: 15px;
+}
+
+
 /* SIDE PANEL RIGHT */
 .side-panel-right {
     width: 300px;
